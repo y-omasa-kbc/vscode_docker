@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'sudo npm test'
+                sh '/node_modules/mocha/bin/mocha --recursive'
             }
         }
     }
