@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'npx mocha --recursive'
+                sh 'npm test'
             }
         }
     }
