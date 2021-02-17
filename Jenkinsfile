@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Prep') {
             steps {
+                sh 'node -v'
                 sh 'npm install'
             }
         }
