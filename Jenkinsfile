@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh '/node_modules/mocha/bin/mocha --recursive'
+                sh 'npx -v'
             }
         }
     }
