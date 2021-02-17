@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'npx -v'
+                sh 'npx mocha -V'
             }
         }
     }
