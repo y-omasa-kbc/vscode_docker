@@ -4,6 +4,11 @@ pipeline {
         HOME = '.'
     }
     stages {
+        stage('Prep') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Test') {
             steps {
                 sh 'npm test'
